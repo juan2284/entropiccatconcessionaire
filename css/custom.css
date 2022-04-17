@@ -1,0 +1,464 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #f5f3f3;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+header {
+    max-height: 50px;
+    align-items: center;
+    background-color: #181818;
+    text-align: center;
+}
+
+
+/* Mini Navbar */
+.en-linea{
+    display: flex;
+    color: #e1e1e1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.en-linea img{
+    width: 4rem;
+}
+
+.en-linea h4{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.enlaces .enlace{
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e1e1e1;
+}
+
+.enlaces .enlace:hover{
+    color: rgba(111, 111, 111, 0.9);
+}
+/* Mini Navbar */
+
+
+/* Barra Separadora */
+.barra {
+    padding: 20px 0;
+    background: #04193c; /* Old browsers */
+    background: -moz-linear-gradient(left, #181818 0%, #0c0c0c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #181818 0%,#0c0c0c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #181818 0%,#0c0c0c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181818', endColorstr='#0c0c0c',GradientType=1 ); /* IE6-9 */
+}
+
+.barra p {
+    margin:0;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.icono1 {
+    background-image: url(../img/icono1.png);
+}
+
+.icono2 {
+    background-image: url(../img/icono2.png);
+}
+
+.icono3 {
+    background-image: url(../img/icono3.png);
+}
+/* Barra Separadora */
+
+
+/* Lista de Carros */
+.carros-nuevos{
+    width: 100%;
+    background-color: #181818;
+}
+
+#encabezado {
+    margin: 30px 0;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+#lista-carros .row {
+    margin-bottom:20px;
+}
+
+.agregar-carrito {
+    margin:10px 0;
+}
+
+.card {
+    background-color: #181818;
+    color: white;
+}
+
+.info-card  {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.text-muted{
+    font-size: 1.3rem;
+}
+
+.info-card p, 
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+/* Lista de Carros */
+
+
+
+/* Estilos Para Buscador */
+.contenedor {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+p {
+    font-size: 2rem;
+}
+h1, p {
+    text-align: center;
+}
+form {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem;
+    background: white;
+}
+
+.contenedor{
+    background: none;
+}
+
+.contenedor #encabezado{
+    color: #181818;
+}
+
+.contenedor #buscador{
+    background: none;
+}
+
+.contenedor #buscador .row{
+    text-align: center;
+}
+
+#buscador label{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#buscador select{
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: none;
+    border: 1px solid rgba(24, 24, 24, 0.3);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 10px;
+}
+
+#resultado p {
+    margin: 0;
+    padding: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+#resultado p span {
+    font-weight: bold;
+}
+
+#resultado p:last-of-type{
+    border: none;
+}
+
+.alerta {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+}
+.error {
+    background-color: red;
+}
+/* Estilos Para Buscador */
+
+
+
+/* Estilos para Contacto */
+.contacto header{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    background: #181818;
+}
+
+form {
+    margin: 30px 0;
+}
+
+#enviar-mail .email{
+    background-color: #F3F4F6;
+    border: none;
+    border-radius: 1px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+#enviar-mail .etiqueta{
+    max-width: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+#enviar-mail .cuadro{
+    font-size: 1.4rem;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+#enviar{
+    background-color: #181818;
+    border: 1px solid #181818;
+    color: white;
+    font-size: 1.7rem;
+    margin-right: 10px;
+}
+
+#enviar:hover{
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    color: #181818;
+}
+
+#resetBtn {
+    background-color: #181818;
+    border: 1px solid #181818;
+    color: white;
+    font-size: 1.7rem;
+}
+
+#resetBtn:hover{
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    color: #181818;
+}
+
+#spinner {
+    display: none;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.horarios{
+    background-color: #181818;
+    margin-top: 10px;
+}
+
+.horario #encabezado{
+    text-align: left;
+    margin: 30px 0 0 0;
+}
+
+.horario .subtitulo{
+    text-align: left;
+    color: #f1f1f1;
+    padding: 0 10px 10px 10px;
+}
+
+.horario .dia-hora{
+    color: white;
+}
+
+.horario .dia-hora p{
+    font-size: 1.3rem;
+}
+
+.horario .dia-hora .dia{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.horario .dia-hora .horas{
+    text-align: right;
+}
+
+.horario .telefono{
+    margin-top: 30px;
+    text-align: left;
+    color: white;
+    font-size: 1.7rem;
+    margin-left: 10px;
+}
+
+.horario .telefono span{
+    font-size: 1.4rem;
+    color: #bbb;
+    font-weight: bold;
+}
+
+.horarios .imagen .img-horarios{
+    width: 100%;
+}
+
+.sk-chase {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    animation: sk-chase 2.5s infinite linear both;
+  }
+  
+  .sk-chase-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+  }
+  
+  .sk-chase-dot:before {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 25%;
+    background-color: #181818;
+    border-radius: 100%;
+    animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+  }
+  
+  .sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+  .sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+  .sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+  .sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+  .sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+  .sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+  .sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+  .sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+  .sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+  .sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+  .sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+  .sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+  
+  @keyframes sk-chase {
+    100% { transform: rotate(360deg); } 
+  }
+  
+  @keyframes sk-chase-dot {
+    80%, 100% { transform: rotate(360deg); } 
+  }
+  
+  @keyframes sk-chase-dot-before {
+    50% {
+      transform: scale(0.4); 
+    } 100%, 0% {
+      transform: scale(1.0); 
+    } 
+  }
+/* Estilos para Contacto */
+
+
+
+/* Media Queries */
+
+.container:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom:0;
+    }
+}
+
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+/* Media Queries */
+
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    border-top:1px solid #aaa;
+    padding-top: 40px;
+    background-color: #181818;
+    color: white;
+}
+
+.footer .autor{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.footer .autor a{
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+/* Footer */

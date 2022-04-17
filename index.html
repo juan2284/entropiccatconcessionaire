@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="img/favicon_logo_entropiccat_blanco.png">
+
+    <title>ECC</title>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="en-linea">
+            <h4>Entropic Cat Car Concessionaire</h4>
+            <img src="img/favicon_logo_entropiccat_blanco.png" id="logo">
+            <div class="enlaces">
+                <a href="cotizador.html" class="enlace" target="_blank">Cotizar Seguro</a>
+                <a href="buscador.html" class="enlace" target="_blank">Buscador de Vehiculos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carrusel Principal -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/2.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carrusel Principal -->
+
+    <!-- Barra Elementos -->
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="col-4 icono icono1">
+                        <p>Las Marcas mas Buscadas<br>
+                        Los Mejores Vehiculos del Año</p>
+                    </div>
+                    <div class="col-4 icono icono2">
+                        <p>Expertos Asesores<br>
+                        Atención Personalizada</p>
+                    </div>
+                    <div class="col-4 icono icono3">
+                        <p>Todo lo que Necesitas<br>
+                        Todo en un Solo Lugar</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Barra Elementos -->
+
+    <!-- Buscador -->
+    <div class="contenedor">
+        <h2 class="encabezado" id="encabezado">Buscador de Autos</h2>
+        <form id="buscador">
+            <div class="row">
+                <div class="col-6">
+                    <label for="marca">Marca</label>
+                    <select id="marca">
+                        <option value="" disabled="disabled" selected="selected">Seleccione</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes Benz">Mercedes Benz</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Dodge">Dodge</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label for="year">Año</label>
+                    <select class="u-full-width" id="year">
+                        <option value="" disabled="disabled" selected="selected">Seleccione</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+
+        <h2 class="encabezado" id="encabezado">Resultados</h2>
+        <div id="resultado"></div>
+    </div>
+    <!-- Buscador -->
+
+    <!-- Carrusel vehiculos -->
+    <div id="lista-carros" class="carros-nuevos">
+        <h2 id="encabezado" class="encabezado">Vehículos Nuevos</h2>
+
+        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-1" id="row-1"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-2" id="row-2"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-3" id="row-3"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-4" id="row-4"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carrusel vehiculos -->
+
+    <!-- Contacto -->
+    <div class="container mx-auto mt-5 bg-white contacto p-0">
+        <header id="header" class="p-3 fw-bold">
+            Contacto
+        </header>
+
+        <form id="enviar-mail" class="py-5 px-5 mx-auto">
+            <div class="mb-5 row">
+                <label class="etiqueta col-9 m-auto" for="email">Para:</label>
+                <input class="p-3 w-75 email col-12 m-auto cuadro"  id="email" type="email">
+            </div>
+            <div class="mb-5 row">
+                <label class="etiqueta col-9 m-auto" for="asunto">Asunto:</label>
+                <input class="p-3 w-75 email col-12 m-auto cuadro"  id="asunto" type="text">
+            </div>
+            <div class="mb-5 row"> 
+                <label class="etiqueta col-9 m-auto" for="mensaje">Mensaje:</label>
+                <textarea class="p-3 w-75 email col-12 m-auto cuadro" id="mensaje"></textarea>
+            </div>
+
+            <div  id="spinner">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
+            
+            <div class="botones">
+                    <button id="enviar" class="w-25 px-2 py-5 opacity-50 mr-5 fw-bold flex justify-content-center" type="submit">Enviar
+                        <i class="fa fa-mail-bulk right ml-3">Enviar</i>
+                    </button>
+
+                    <button 
+                        id="resetBtn" class="w-25 px-2 py-5 fw-bold flex justify-content-center" type="button">Resetear Form
+                        <i class="fa fa-close right ml-3">Limpiar</i>
+                    </button>
+            </div>
+        </form> 
+    </div>
+    <!-- Contacto -->
+
+
+    <!-- Horarios -->
+    <div class="row horarios gx-0">
+        <div class="col-6 horario">
+            <h2 id="encabezado" class="encabezado">Entropic Cat Caracas</h2>
+            <p class="subtitulo">Horarios de Atención</p>
+            <div class="row dia-hora mt-5">
+                <p class="dia col-5">Lunes - Viernes</p>
+                <p class="horas col-6">8:00 AM - 12:00 AM / 2:00 PM - 5:00 PM</p>
+                <p class="dia col-5">Sábado - Domingo</p>
+                <p class="horas col-6">Cerrado</p>
+            </div>
+            <p class="telefono">Teléfono: <span>+58 - 0212-444-4444</span></p>
+        </div>
+
+        <div class="col-6 imagen gx-0">
+            <img class="img-horarios" src="img/horarios.jpg" alt="">
+        </div>
+    </div>
+    <!-- Horarios -->
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <p class="autor">© Hecho por <a href="https://github.com/juan2284" target="_blank" rel="nofollow noopener noreferrer">Juan Rodriguez</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/db-simple.js"></script>
+
+</body>
+</html>

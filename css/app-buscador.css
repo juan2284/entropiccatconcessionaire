@@ -1,0 +1,118 @@
+body {
+    background-image: linear-gradient(to right, #070707 0%, #181818 100%);
+    font-family: 'Staatliches', cursive;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 6rem;
+    padding: 3rem 0;
+    margin: 0;
+    color: white;
+}
+
+.contenedor {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h2, p {
+    text-align: center;
+}
+
+form {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem;
+    background: white;
+    margin-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    font-size: 5rem;
+}
+
+#app p{
+    text-align: left!important;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buscador label{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#buscador select{
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: none;
+    border: 1px solid rgba(24, 24, 24, 0.3);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 10px;
+}
+
+.contenedor #buscador .row{
+    text-align: center;
+}
+
+.contenedor h2{
+    font-size: 3rem;
+    color: #181818;
+}
+
+#resultado p {
+    margin: 0;
+    padding: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#resultado p span {
+    font-weight: bold;
+}
+
+#resultado p:last-of-type{
+    border: none;
+}
+
+.alerta {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+}
+
+.error {
+    background-color: red;
+}
+
+.sitio-web  {
+    color: white;
+    display: block;
+    font-size: 4rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.sitio-web:hover {
+    color: white;
+}
